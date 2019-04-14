@@ -11,6 +11,10 @@
     }
   }
 
+  .navbar-brand {
+    font-size: 2rem;
+  }
+
 
   .nav-link.active {
     color: $nav-active-color;
@@ -24,9 +28,11 @@
 
 // header styles
 #home {
-  background: $header-bg;
+  background: url('../img/bg2.jpg');
+  background-size: cover;
+  background-attachment: fixed;
   width: 100%;
-  height: 70vh;
+  height: 90vh;
 
   .container {
     height: 100%;
@@ -44,11 +50,57 @@
 }
 
 #resume {
-  min-height: 100vh;
+  .about {
+    display: flex;
 
-  .container {
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(51, 51, 51, 0.5);
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
+
+    .about-content {
+      width: 70%;
+
+      @media (max-width: 1000px) {
+        width: 100%;
+        order: 2;
+      }
+    }
+
+    .about-media {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        box-shadow: 0 5px 10px #333;
+        width: 80%;
+      }
+
+      @media (max-width: 1000px) {
+        width: 100%;
+        order: 1;
+      }
+    }
+  }
+
+  .row {
+    flex-wrap: wrap;
+
+    &:not(:last-child) {
+      border-bottom: solid 1px #333;
+      padding-bottom: 2rem;
+    }
+
+    .skill-item {
+      display: inline-block;
+      font-size: 1rem;
+      width: 45%;
+      padding: 0 1rem;
+    }
+
+    h6 {
+      padding: 1rem 0 0.5rem;
+    }
   }
 }

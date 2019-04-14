@@ -1,6 +1,7 @@
 body {
   font-family: $primary-font;
   background: $body-bg;
+  background-attachment: fixed;
   position: relative;
 }
 
@@ -23,7 +24,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $primary-font;
+  font-family: $heading;
 }
 
 h1 {

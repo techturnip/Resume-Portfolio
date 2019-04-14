@@ -2,6 +2,10 @@
 .navbar {
   background: $nav-bg;
 
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+
   .nav-link,
   .navbar-brand {
     color: $nav-link-color;
@@ -12,6 +16,7 @@
   }
 
   .navbar-brand {
+    margin-right: 0;
     font-size: 2rem;
   }
 
@@ -20,9 +25,28 @@
     color: $nav-active-color;
   }
 
+  .social-icons {
+    display: inline-block;
 
-  .fa {
-    color: $wine;
+    .social-link {
+      color: $nav-link-color;
+
+      &:not(:last-child) {
+        padding-right: 1rem;
+      }
+
+      &:hover {
+        color: $nav-hover-color;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    border-color: $nav-hamburger;
+
+    .fa {
+      color: $nav-hamburger;
+    }
   }
 }
 
@@ -78,7 +102,7 @@
 
       img {
         box-shadow: 0 5px 10px #333;
-        width: 80%;
+        width: 100%;
       }
 
       @media (max-width: 1000px) {
@@ -88,23 +112,25 @@
     }
   }
 
+
   .row {
     flex-wrap: wrap;
-
-    &:not(:last-child) {
-      border-bottom: solid 1px #333;
-      padding-bottom: 2rem;
-    }
 
     .skill-item {
       display: inline-block;
       font-size: 1rem;
       width: 45%;
       padding: 0 1rem;
-    }
 
-    h6 {
-      padding: 1rem 0 0.5rem;
+      h6 {
+        padding: 1rem 0 0.5rem;
+        font-family: $heading;
+        font-size: 2rem;
+      }
+
+      @media (max-width: 800px) {
+        width: 100%;
+      }
     }
   }
 }

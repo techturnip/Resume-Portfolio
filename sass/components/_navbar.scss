@@ -16,7 +16,7 @@
   }
 
   .navbar-brand {
-    margin-right: 0;
+    margin-right: 1rem;
     font-size: 2rem;
   }
 
@@ -26,8 +26,6 @@
   }
 
   .social-icons {
-    display: inline-block;
-
     .social-link {
       color: $nav-link-color;
 

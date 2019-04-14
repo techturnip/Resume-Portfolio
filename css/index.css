@@ -73,18 +73,16 @@ h6 {
     .navbar .navbar-brand:hover {
       color: #acacac; }
   .navbar .navbar-brand {
-    margin-right: 0;
+    margin-right: 1rem;
     font-size: 2rem; }
   .navbar .nav-link.active {
     color: #ff5d73; }
-  .navbar .social-icons {
-    display: inline-block; }
-    .navbar .social-icons .social-link {
-      color: #dbdada; }
-      .navbar .social-icons .social-link:not(:last-child) {
-        padding-right: 1rem; }
-      .navbar .social-icons .social-link:hover {
-        color: #acacac; }
+  .navbar .social-icons .social-link {
+    color: #dbdada; }
+    .navbar .social-icons .social-link:not(:last-child) {
+      padding-right: 1rem; }
+    .navbar .social-icons .social-link:hover {
+      color: #acacac; }
   .navbar .navbar-toggler {
     border-color: #ff5d73; }
     .navbar .navbar-toggler .fa {

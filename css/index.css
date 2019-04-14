@@ -1,7 +1,5 @@
 body {
   font-family: "Open Sans", sans-serif;
-  background: url("../img/bg.png");
-  background-attachment: fixed;
   position: relative; }
 
 a {
@@ -41,25 +39,24 @@ h6 {
   font-weight: bold; }
 
 .section {
-  padding: 2% 0; }
+  padding: 3% 0; }
   .section .container {
+    margin-top: -74px;
+    padding-top: 74px; }
+  .section .section-header {
+    padding: 2rem 0;
     background: white;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(51, 51, 51, 0.5); }
-  .section .section-header {
-    padding: 2rem 0;
-    margin-bottom: 2rem; }
     .section .section-header .section-title {
       text-align: center; }
   .section .section-content {
     font-size: 1.3rem;
     padding: 3rem;
-    margin-top: 4rem; }
-
-.section-title,
-.header-title,
-.navbar-brand {
-  font-family: "Pacifico", cursive; }
+    margin-top: 5%;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(51, 51, 51, 0.5); }
 
 .animated {
   animation-delay: 0.5s;
@@ -109,42 +106,75 @@ h6 {
   #home .header-subtitle {
     animation-delay: 0.5s;
     animation-duration: 1.5s; }
+  #home .arrow-down {
+    margin-top: 1rem; }
+    #home .arrow-down .animated {
+      animation-duration: 2s;
+      animation-iteration-count: infinite; }
 
-#resume .about {
-  display: flex; }
-  @media (max-width: 1000px) {
-    #resume .about {
-      flex-direction: column; } }
-  #resume .about .about-content {
-    width: 70%; }
+#resume {
+  background: url("../img/bg.png");
+  background-attachment: fixed;
+  padding-bottom: 10%; }
+  #resume .about {
+    display: flex; }
     @media (max-width: 1000px) {
-      #resume .about .about-content {
-        width: 100%;
-        order: 2; } }
-  #resume .about .about-media {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    #resume .about .about-media img {
-      box-shadow: 0 5px 10px #333;
-      width: 100%; }
-    @media (max-width: 1000px) {
-      #resume .about .about-media {
-        width: 100%;
-        order: 1; } }
+      #resume .about {
+        flex-direction: column; } }
+    #resume .about .about-content {
+      width: 70%; }
+      @media (max-width: 1000px) {
+        #resume .about .about-content {
+          width: 100%;
+          order: 2; } }
+    #resume .about .about-media {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #resume .about .about-media img {
+        box-shadow: 0 5px 10px #333;
+        width: 100%; }
+      @media (max-width: 1000px) {
+        #resume .about .about-media {
+          width: 100%;
+          order: 1; } }
+  #resume .row {
+    flex-wrap: wrap; }
+    #resume .row .skill-item {
+      display: inline-block;
+      font-size: 1rem;
+      width: 45%;
+      padding: 0 1rem; }
+      #resume .row .skill-item h6 {
+        padding: 1rem 0 0.5rem;
+        font-family: "Pacifico", cursive;
+        font-size: 2rem; }
+      @media (max-width: 800px) {
+        #resume .row .skill-item {
+          width: 100%; } }
+  #resume .history-item {
+    font-size: 1rem; }
+    #resume .history-item .history-title {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.2rem; }
+      #resume .history-item .history-title span {
+        font-size: .9rem; }
 
-#resume .row {
-  flex-wrap: wrap; }
-  #resume .row .skill-item {
-    display: inline-block;
-    font-size: 1rem;
-    width: 45%;
-    padding: 0 1rem; }
-    #resume .row .skill-item h6 {
-      padding: 1rem 0 0.5rem;
-      font-family: "Pacifico", cursive;
-      font-size: 2rem; }
-    @media (max-width: 800px) {
-      #resume .row .skill-item {
-        width: 100%; } }
+#portfolio {
+  background: url("../img/bg2.png");
+  background-attachment: fixed;
+  color: #222222;
+  position: relative; }
+  #portfolio .portfolio-header {
+    background: #ff5d73;
+    padding: 3rem 0; }
+  #portfolio .portfolio-content {
+    padding: 3% 0; }
+    #portfolio .portfolio-content .card {
+      margin-top: 5%; }
+      #portfolio .portfolio-content .card .card-img-top {
+        width: 60%;
+        margin: 0 auto; }
+      #portfolio .portfolio-content .card .card-title {
+        font-size: 1.4rem; }

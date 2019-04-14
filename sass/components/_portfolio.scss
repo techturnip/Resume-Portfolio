@@ -1,0 +1,28 @@
+#portfolio {
+  background: $portfolio-bg;
+  background-attachment: fixed;
+  color: $portfolio-font-color;
+  position: relative;
+
+  .portfolio-header {
+    background: $fiery-rose;
+    padding: 3rem 0;
+  }
+
+  .portfolio-content {
+    padding: 3% 0;
+
+    .card {
+      margin-top: 5%;
+
+      .card-img-top {
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      .card-title {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

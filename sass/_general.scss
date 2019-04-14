@@ -1,7 +1,5 @@
 body {
   font-family: $primary-font;
-  background: $body-bg;
-  background-attachment: fixed;
   position: relative;
 }
 
@@ -53,17 +51,19 @@ h6 {
 }
 
 .section {
-  padding: 2% 0;
+  padding: 3% 0;
 
   .container {
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(51, 51, 51, 0.5);
+    // offset fixed navbar for anchor links
+    margin-top: -74px;
+    padding-top: 74px;
   }
 
   .section-header {
     padding: 2rem 0;
-    margin-bottom: 2rem;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(51, 51, 51, 0.5);
 
     .section-title {
       text-align: center;
@@ -73,14 +73,11 @@ h6 {
   .section-content {
     font-size: 1.3rem;
     padding: 3rem;
-    margin-top: 4rem;
+    margin-top: 5%;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(51, 51, 51, 0.5);
   }
-}
-
-.section-title,
-.header-title,
-.navbar-brand {
-  font-family: $heading;
 }
 
 .animated {

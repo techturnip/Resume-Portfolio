@@ -11,6 +11,7 @@ $heading-font: $heading;
 $outer-space: #494949;
 $silver-chalice: #acacac;
 $raisin-black: #222222;
+$raisin-black-trans: rgba(34, 34, 34, 0.5);
 $gainsboro: #dbdada;
 $trolley-grey: #7c7a7a;
 $onyx: #393838;
@@ -27,7 +28,13 @@ $link-hover-color: $wine;
 $nav-link-color: $gainsboro;
 $nav-hover-color: $silver-chalice;
 $nav-active-color: $fiery-rose;
-$nav-hamburger: $fiery-rose; // Background Colors
+$nav-hamburger: $fiery-rose;
+
+// Background Colors
 $body-bg: url('../img/bg.png');
-$nav-bg: $raisin-black;
 $header-bg: url('../img/bg3.png');
+$nav-bg: $raisin-black;
+
+// Portfolio
+$portfolio-bg: url('../img/bg2.png');
+$portfolio-font-color: $raisin-black;

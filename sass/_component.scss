@@ -11,19 +11,25 @@
     }
   }
 
+
+  .nav-link.active {
+    color: $nav-active-color;
+  }
+
+
   .fa {
     color: $wine;
   }
 }
 
 // header styles
-.header {
+#home {
   background: $header-bg;
   width: 100%;
-  height: 600px;
+  height: 70vh;
 
   .container {
-    height: 600px;
+    height: 100%;
 
     .d-flex {
       height: 100%;
@@ -34,5 +40,15 @@
   .header-subtitle {
     animation-delay: 0.5s;
     animation-duration: 1.5s;
+  }
+}
+
+#resume {
+  min-height: 100vh;
+
+  .container {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(51, 51, 51, 0.5);
   }
 }

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Tyler Turnipseed</title>
 
-    <link rel="stylesheet" href="css/vendor/animate.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -21,8 +21,24 @@
     <link rel="stylesheet" href="/css/index.css" />
   </head>
 
-  <body>
-    <nav class="navbar navbar-expand-md">
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <header id="home">
+      <div class="container">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <h2 data-aos="fade-left" class="header-title display-2">
+            Tyler Turnipseed
+          </h2>
+          <p data-aos="fade-right" class="header-subtitle display-4">
+            Web Developer
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- ./header -->
+
+    <nav class="navbar sticky-top navbar-expand-md">
       <div class="container">
         <a class="navbar-brand" href="#">Tyler Turnipseed</a>
         <button
@@ -38,11 +54,11 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Resume</a>
+              <a class="nav-link" href="#resume">Resume</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Portfolio</a>
@@ -59,20 +75,38 @@
     </nav>
     <!-- ./navbar -->
 
-    <header class="header">
-      <div class="container">
-        <div
-          class="d-flex flex-column justify-content-center align-items-center"
+    <section id="resume" class="section">
+      <div data-aos="fade-up" class="container section-header">
+        <h3
+          data-aos="zoom-out"
+          data-aos-delay="500"
+          class="section-title display-3"
         >
-          <h2 class="header-title display-2">Tyler Turnipseed</h2>
-          <p class="header-subtitle display-4">Web Developer</p>
+          Check out my Resume!
+        </h3>
+      </div>
+
+      <div data-aos="fade-up" class="container section-content">
+        <div class="content-item">
+          <h4 data-aos="fade-down" data-aos-delay="500">About Me</h4>
+          <p>
+            I've been working with HTML/CSS for over a decade. I have experience
+            working with HTML & CSS frameworks such as Bootstrap and Materialize
+            CSS, content management systems such as WordPress, and JavaScript
+            libraries/frameworks like React and Angular 2+.
+          </p>
         </div>
       </div>
-    </header>
-    <!-- ./header -->
+    </section>
 
     <script src="/js/vendor/jquery-3.4.0.min.js"></script>
     <script src="/js/animation.js"></script>
     <script src="/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200
+      });
+    </script>
   </body>
 </html>

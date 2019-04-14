@@ -84,3 +84,13 @@ h6 {
   animation-delay: 0.5s;
   animation-duration: 1s;
 }
+
+.footer {
+  background-color: $raisin-black;
+  padding: 2rem 0;
+  margin-top: 5rem;
+
+  p {
+    margin: 0;
+  }
+}

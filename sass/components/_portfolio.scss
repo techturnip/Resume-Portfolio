@@ -2,7 +2,15 @@
   background: $portfolio-bg;
   background-attachment: fixed;
   color: $portfolio-font-color;
-  position: relative;
+  padding-bottom: 4rem;
+
+  #portfolioLink {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+  }
 
   .portfolio-header {
     background: $fiery-rose;
@@ -14,6 +22,7 @@
 
     .card {
       margin-top: 5%;
+      margin-bottom: 5%;
 
       .card-img-top {
         width: 60%;

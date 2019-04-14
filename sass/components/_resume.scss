@@ -20,18 +20,22 @@
     }
 
     .about-media {
-      width: 30%;
+      padding-left: 1rem;
       display: flex;
       justify-content: center;
       align-items: center;
 
       img {
         box-shadow: 0 5px 10px #333;
-        width: 100%;
+        width: 300px;
+
+        @media (max-width: 1000px) {
+          margin-bottom: 1rem;
+        }
       }
 
       @media (max-width: 1000px) {
-        width: 100%;
+        padding-left: 0;
         order: 1;
       }
     }
@@ -59,15 +63,22 @@
     }
   }
 
-  .history-item {
-    font-size: 1rem;
+  #workHistory {
+    .animated {
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
 
-    .history-title {
-      font-family: $primary-font;
-      font-size: 1.2rem;
+    .history-item {
+      font-size: 1rem;
 
-      span {
-        font-size: .9rem;
+      .history-title {
+        font-family: $primary-font;
+        font-size: 1.2rem;
+
+        span {
+          font-size: .9rem;
+        }
       }
     }
   }

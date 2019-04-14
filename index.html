@@ -109,7 +109,7 @@
               <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
           <!-- ./navbar-nav -->
@@ -157,7 +157,7 @@
                 data-aos-delay="500"
                 src="/img/me.jpg"
                 alt=""
-                class="rounded-circle"
+                class="me rounded-circle"
               />
             </div>
           </div>
@@ -267,17 +267,17 @@
 
       <!-- Work History -->
       <div id="workHistory" class="container">
-        <div class="section-content">
+        <div data-aos="fade-up" class="section-content">
           <h4 class="text-center">
-            Work History <i class="fas fa-hammer"></i>
+            Work History <i class="ml-3 animated wobble fas fa-hammer"></i>
           </h4>
         </div>
       </div>
 
       <!-- Work History Content -->
       <div class="container">
-        <div class="section-content">
-          <div class="history-item">
+        <div data-aos="fade-up" class="section-content">
+          <div data-aos="slide-left" class="history-item">
             <h6 class="history-title">
               Field Technician <span>- Terracon - July 2017 - Current</span>
             </h6>
@@ -292,7 +292,7 @@
               environment.
             </p>
           </div>
-          <div class="history-item">
+          <div data-aos="slide-right" class="history-item">
             <h6 class="history-title">
               Produce Associate/Manager
               <span>- Kroger - October 2013 - July 2017</span>
@@ -308,21 +308,34 @@
       </div>
     </section>
 
+    <!-- Portfolio Section -->
     <section id="portfolio">
-      <div class="container-fluid portfolio-header">
-        <h3 class="text-center">My Portfolio</h3>
+      <!-- Portfolio Header -->
+      <div
+        id="portfolioLink"
+        class="container-fluid align-items-center justify-content-center portfolio-header"
+      >
+        <h3 data-aos="fade-down" class="text-center">Check Out My Portfolio</h3>
       </div>
+      <!-- ./portfolio-header -->
 
+      <!-- Portfolio Content -->
       <div class="portfolio-content">
+        <!-- Container -->
         <div class="container">
+          <!-- Row -->
           <div class="row">
-            <div class="col-md-6">
+            <!-- Column -->
+            <div data-aos="slide-right" class="col-md-6">
+              <!-- Card -->
               <div class="card">
+                <!-- Card Image -->
                 <img
                   src="img/contact-manager.png"
                   alt="Screenshot of contact manager application"
                   class="card-img-top"
                 />
+                <!-- Card Body -->
                 <div class="card-body">
                   <h4 class="card-title">Contact Manager</h4>
                   <p class="card-text">
@@ -331,6 +344,7 @@
                     framework with data automatically populated via the
                     JSONPlaceholder api.
                   </p>
+                  <!-- Card Buttons -->
                   <a
                     href="https://github.com/techturnip/contactmanager"
                     target="_blank"
@@ -346,15 +360,23 @@
                     View App
                   </a>
                 </div>
+                <!-- ./card-body -->
               </div>
+              <!-- ./card -->
             </div>
-            <div class="col-md-6">
+            <!-- ./col -->
+
+            <!-- Column -->
+            <div data-aos="slide-left" class="col-md-6">
+              <!-- Card -->
               <div class="card">
+                <!-- Card Image -->
                 <img
                   src="img/great-idea.png"
                   alt="Screenshot of contact manager application"
                   class="card-img-top"
                 />
+                <!-- Card Body -->
                 <div class="card-body">
                   <h4 class="card-title">Great Idea!</h4>
                   <p class="card-text">
@@ -362,6 +384,7 @@
                     leveraging media queries and flexbox to layout elements at
                     different breakpoints throughout the website.
                   </p>
+                  <!-- Card Buttons -->
                   <a
                     href="https://github.com/techturnip/responsive-web-design-I/tree/tyler-turnipseed"
                     target="_blank"
@@ -377,15 +400,23 @@
                     View Website
                   </a>
                 </div>
+                <!-- ./card-body -->
               </div>
+              <!-- ./card -->
             </div>
-            <div class="col-md-6">
+            <!-- ./col -->
+
+            <!-- Column -->
+            <div data-aos="slide-right" class="col-md-6">
+              <!-- Card -->
               <div class="card">
+                <!-- Card Image -->
                 <img
-                  src="img/great-idea.png"
+                  src="img/resume-screenshot.png"
                   alt="Screenshot of contact manager application"
                   class="card-img-top"
                 />
+                <!-- Card Body -->
                 <div class="card-body">
                   <h4 class="card-title">Digital Resume</h4>
                   <p class="card-text">
@@ -393,6 +424,7 @@
                     principles of CSS preprocessing by creating a Digital Resume
                     of my own design using LESS.
                   </p>
+                  <!-- Card Buttons -->
                   <a
                     href="https://github.com/techturnip/Preprocessing-I/tree/tyler-turnipseed"
                     target="_blank"
@@ -408,12 +440,70 @@
                     View Website
                   </a>
                 </div>
+                <!-- ./card-body -->
               </div>
+              <!-- ./card -->
+            </div>
+            <!-- ./col -->
+          </div>
+          <!-- ./row -->
+        </div>
+        <!-- ./container -->
+      </div>
+      <!-- ./portfolio-content -->
+    </section>
+    <!-- #/portfolio -->
+
+    <section id="contact">
+      <div class="container my-4">
+        <h3 data-aos="slide-right">Contact Me</h3>
+      </div>
+
+      <div class="container">
+        <form>
+          <div class="form-row">
+            <div data-aos="fade-down-right" class="form-group col-md-6">
+              <label for="inputName">Name</label>
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                id="inputName"
+                placeholder="Your Name"
+              />
+            </div>
+            <div data-aos="fade-down-left" class="form-group col-md-6">
+              <label for="inputEmail">Email</label>
+              <input
+                type="email"
+                class="form-control form-control-lg"
+                id="inputEmail"
+                placeholder="Your Email"
+              />
             </div>
           </div>
-        </div>
+          <div data-aos="fade-up" class="form-group">
+            <label for="inputMessage">Message</label>
+            <textarea
+              type="text"
+              class="form-control form-control-lg"
+              id="inputMessage"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <button
+            data-aos="fade-up"
+            type="submit"
+            class="btn btn-lg btn-block w-50 mx-auto btn-primary"
+          >
+            Submit
+          </button>
+        </form>
       </div>
     </section>
+
+    <footer class="footer">
+      <p class="text-center text-light">&copy; Tyler Turnipseed - 2019</p>
+    </footer>
 
     <script src="/js/vendor/jquery-3.4.0.min.js"></script>
     <script src="/js/vendor/bootstrap.bundle.min.js"></script>

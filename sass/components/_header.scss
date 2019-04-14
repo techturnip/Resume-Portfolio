@@ -1,0 +1,26 @@
+// header styles
+#home {
+  background: $header-bg;
+  background-attachment: fixed;
+  width: 100%;
+  height: 90vh;
+
+  .container {
+    height: 100%;
+
+    .d-flex {
+      height: 100%;
+    }
+  }
+
+  .header-title,
+  .header-subtitle {
+    text-shadow: 2px 5px 3px rgba(51, 51, 51, 0.5);
+  }
+
+  .header-title,
+  .header-subtitle {
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+  }
+}

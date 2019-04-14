@@ -65,11 +65,6 @@ h6 {
   animation-delay: 0.5s;
   animation-duration: 1s; }
 
-.container {
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto; }
-
 .navbar {
   background: #222222; }
   .navbar .navbar-collapse {
@@ -87,11 +82,11 @@ h6 {
     color: #ff5d73; }
   .navbar .social-icons {
     display: inline-block; }
-    .navbar .social-icons a {
+    .navbar .social-icons .social-link {
       color: #dbdada; }
-      .navbar .social-icons a:not(:last-child) {
+      .navbar .social-icons .social-link:not(:last-child) {
         padding-right: 1rem; }
-      .navbar .social-icons a:hover {
+      .navbar .social-icons .social-link:hover {
         color: #acacac; }
   .navbar .navbar-toggler {
     border-color: #ff5d73; }

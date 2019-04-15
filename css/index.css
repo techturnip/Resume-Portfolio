@@ -21,22 +21,87 @@ h6 {
 
 h1 {
   font-size: 6rem; }
+  @media only screen and (max-width: 1200px) {
+    h1 {
+      font-size: 5rem; } }
+  @media only screen and (max-width: 992px) {
+    h1 {
+      font-size: 4.5rem; } }
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 4rem; } }
 
 h2 {
   font-size: 5.5rem; }
+  @media only screen and (max-width: 1200px) {
+    h2 {
+      font-size: 4.5rem; } }
+  @media only screen and (max-width: 992px) {
+    h2 {
+      font-size: 3.5rem; } }
+  @media only screen and (max-width: 768px) {
+    h2 {
+      font-size: 3rem; } }
 
 h3 {
   font-size: 4.5rem; }
+  @media only screen and (max-width: 1200px) {
+    h3 {
+      font-size: 3.5rem; } }
+  @media only screen and (max-width: 992px) {
+    h3 {
+      font-size: 3rem; } }
+  @media only screen and (max-width: 768px) {
+    h3 {
+      font-size: 2.5rem; } }
 
 h4 {
   font-size: 3.5rem; }
+  @media only screen and (max-width: 1200px) {
+    h4 {
+      font-size: 3rem; } }
+  @media only screen and (max-width: 992px) {
+    h4 {
+      font-size: 2.5rem; } }
+  @media only screen and (max-width: 768px) {
+    h4 {
+      font-size: 2rem; } }
 
 h5 {
   font-size: 2.5rem; }
+  @media only screen and (max-width: 1200px) {
+    h5 {
+      font-size: 2.25rem; } }
+  @media only screen and (max-width: 992px) {
+    h5 {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 768px) {
+    h5 {
+      font-size: 1.75rem; } }
 
 h6 {
-  font-size: 1.5rem;
-  font-weight: bold; }
+  font-size: 1.5rem; }
+  @media only screen and (max-width: 1200px) {
+    h6 {
+      font-size: 1.5rem; } }
+  @media only screen and (max-width: 992px) {
+    h6 {
+      font-size: 1.3rem; } }
+  @media only screen and (max-width: 768px) {
+    h6 {
+      font-size: 1.2rem; } }
+
+p {
+  font-size: 1.3rem; }
+  @media only screen and (max-width: 1200px) {
+    p {
+      font-size: 1.2rem; } }
+  @media only screen and (max-width: 992px) {
+    p {
+      font-size: 1.1rem; } }
+  @media only screen and (max-width: 768px) {
+    p {
+      font-size: 1rem; } }
 
 .section {
   padding: 3% 0; }
@@ -81,7 +146,8 @@ h6 {
       color: #ff5d73; }
   .navbar .navbar-brand {
     margin-right: 1rem;
-    font-size: 2rem; }
+    font-size: 2rem;
+    font-family: "Pacifico", cursive; }
   .navbar .nav-link.active {
     color: #ff5d73; }
   .navbar .social-icons .social-link {
@@ -107,11 +173,20 @@ h6 {
       height: 100%; }
   #home .header-title,
   #home .header-subtitle {
-    text-shadow: 2px 5px 3px rgba(51, 51, 51, 0.5); }
-  #home .header-title,
-  #home .header-subtitle {
+    text-shadow: 2px 5px 3px rgba(51, 51, 51, 0.5);
     animation-delay: 0.5s;
     animation-duration: 1.5s; }
+  #home .header-subtitle {
+    font-size: 4rem; }
+    @media only screen and (max-width: 1200px) {
+      #home .header-subtitle {
+        font-size: 3rem; } }
+    @media only screen and (max-width: 992px) {
+      #home .header-subtitle {
+        font-size: 2.5rem; } }
+    @media only screen and (max-width: 768px) {
+      #home .header-subtitle {
+        font-size: 2rem; } }
   #home .arrow-down {
     margin-top: 1rem; }
     #home .arrow-down .animated {

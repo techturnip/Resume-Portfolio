@@ -16,12 +16,13 @@
   .header-title,
   .header-subtitle {
     text-shadow: 2px 5px 3px rgba(51, 51, 51, 0.5);
-  }
-
-  .header-title,
-  .header-subtitle {
     animation-delay: 0.5s;
     animation-duration: 1.5s;
+  }
+
+  .header-subtitle {
+    font-size: 4rem;
+    @include resp-text(3rem, 2.5rem, 2rem);
   }
 
   .arrow-down {

@@ -38,3 +38,23 @@ $nav-bg: $raisin-black;
 // Portfolio
 $portfolio-bg: url('../img/bg2.png');
 $portfolio-font-color: $raisin-black;
+
+// Media Variables
+$break-sm: "only screen and (max-width: 768px)";
+$break-md: "only screen and (max-width: 992px)";
+$break-lg: "only screen and (max-width: 1200px)";
+
+// Mixins
+@mixin resp-text($lg-font, $md-font, $sm-font) {
+  @media #{$break-lg} {
+    font-size: $lg-font;
+  }
+
+  @media #{$break-md} {
+    font-size: $md-font;
+  }
+
+  @media #{$break-sm} {
+    font-size: $sm-font;
+  }
+}

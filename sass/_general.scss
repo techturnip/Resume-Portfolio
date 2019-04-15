@@ -27,27 +27,38 @@ h6 {
 
 h1 {
   font-size: 6rem;
+
+  @include resp-text(5rem, 4.5rem, 4rem);
 }
 
 h2 {
   font-size: 5.5rem;
+  @include resp-text(4.5rem, 3.5rem, 3rem);
 }
 
 h3 {
   font-size: 4.5rem;
+  @include resp-text(3.5rem, 3rem, 2.5rem);
 }
 
 h4 {
   font-size: 3.5rem;
+  @include resp-text(3rem, 2.5rem, 2rem);
 }
 
 h5 {
   font-size: 2.5rem;
+  @include resp-text(2.25rem, 2rem, 1.75rem);
 }
 
 h6 {
   font-size: 1.5rem;
-  font-weight: bold;
+  @include resp-text(1.5rem, 1.3rem, 1.2rem);
+}
+
+p {
+  font-size: 1.3rem;
+  @include resp-text(1.2rem, 1.1rem, 1rem);
 }
 
 .section {

@@ -28,6 +28,7 @@
   .social-icons {
     .social-link {
       color: $nav-link-color;
+      text-decoration: none;
 
       &:not(:last-child) {
         padding-right: 1rem;

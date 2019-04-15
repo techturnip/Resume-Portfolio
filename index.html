@@ -26,6 +26,7 @@
   </head>
 
   <body data-spy="scroll" data-target=".navbar">
+    <!-- HEADER -->
     <header id="home">
       <div class="container">
         <div
@@ -40,14 +41,20 @@
           <div class="arrow-down">
             <i class="animated bounce fa fa-chevron-down fa-4x"></i>
           </div>
+          <!-- ./arrow-down -->
         </div>
+        <!-- ./flex-column -->
       </div>
+      <!-- ./container -->
     </header>
     <!-- ./header -->
 
+    <!-- STICKY NAVBAR -->
     <nav class="navbar sticky-top navbar-expand-md">
       <div class="container d-flex justify-content-between">
+        <!-- Social Icons -->
         <div class="social-icons">
+          <!-- Navbar Brand -->
           <a class="navbar-brand" href="#">techTurnip</a>
           <a
             class="social-link"
@@ -71,6 +78,9 @@
             <i class="fab fa-linkedin fa-2x"></i>
           </a>
         </div>
+        <!-- ./social-icons -->
+
+        <!-- Mobile Collapse Toggle -->
         <button
           class="navbar-toggler d-lg-none"
           type="button"
@@ -80,14 +90,22 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span><i class="fa fa-bars fa-lg" aria-hidden="true"></i></span>
-        </button>
+          <span
+            ><i class="fa fa-bars fa-lg" aria-hidden="true"></i
+          ></span></button
+        ><!-- ./navbar-toggler -->
+
+        <!-- Mobile Collapse Wrapper -->
         <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <!-- Navbar Items -->
           <ul class="navbar-nav">
+            <!-- Nav Items > Links-->
             <li class="nav-item">
               <a class="nav-link active" href="#home">Home</a>
             </li>
+            <!-- Dropdown -->
             <li class="nav-item dropdown">
+              <!-- dropdown toggle -->
               <a
                 id="resumeDropdown"
                 data-toggle="dropdown"
@@ -104,6 +122,7 @@
                 <a href="#aboutMe" class="dropdown-item">About Me</a>
                 <a href="#workHistory" class="dropdown-item">Work History</a>
               </div>
+              <!-- ./dropdown-menu -->
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -139,8 +158,11 @@
 
       <!-- Resume Content -->
       <div id="aboutMe" data-aos="fade-up" class="container">
-        <div class="section-content">
+        <!-- About Me / Skills Box-->
+        <div class="content-box">
+          <!-- About Me Wrapper-->
           <div class="about">
+            <!-- About Me Content-->
             <div class="about-content">
               <h4 data-aos="fade-down" data-aos-delay="500">About Me</h4>
               <p data-aos="zoom-in">
@@ -151,6 +173,7 @@
                 Angular 2+.
               </p>
             </div>
+            <!-- About Image -->
             <div class="about-media">
               <img
                 data-aos="zoom-in"
@@ -160,11 +183,14 @@
                 class="me rounded-circle"
               />
             </div>
+            <!-- ./about-media -->
           </div>
+          <!-- ./about -->
 
           <!-- Skills -->
-          <div class="row skills">
+          <div class="row">
             <div data-aos="slide-up" class="col-md-6">
+              <!-- My Skills -->
               <h5>My Skills</h5>
               <p>
                 <span class="badge badge-primary">HTML &amp; CSS</span>
@@ -178,6 +204,7 @@
             </div>
             <!-- ./col -->
             <div data-aos="slide-up" class="col-md-6">
+              <!-- Soft Skills-->
               <h5>Soft Skills</h5>
               <p>
                 <span class="badge badge-secondary">Empathy</span>
@@ -197,13 +224,13 @@
           </div>
           <!-- ./row -->
         </div>
-        <!-- ./section-content -->
+        <!-- ./content-box -->
       </div>
       <!-- ./container -->
 
       <!-- Objective -->
       <div data-aos="slide-up" class="container">
-        <div class="section-content">
+        <div class="content-box">
           <h5>Objective</h5>
           <p>
             Seeking a career transition into a Web Developer position within a
@@ -212,12 +239,13 @@
           </p>
         </div>
       </div>
-      <!-- ./container ./section-content -->
+      <!-- ./container ./content-box -->
 
       <!-- Applicable Skills -->
       <div data-aos="fade" class="container">
-        <div class="section-content">
-          <div class="row d-flex justify-content-evenly">
+        <div class="content-box">
+          <!-- Flex Container -->
+          <div class="d-flex flex-lg-row flex-wrap justify-content-evenly">
             <div data-aos="fade-up-left" class="skill-item">
               <h6>Empathy</h6>
               <p>
@@ -228,6 +256,7 @@
                 within the workplace culture.
               </p>
             </div>
+            <!-- ./skill-item -->
 
             <div data-aos="fade-up-right" class="skill-item">
               <h6>Communication</h6>
@@ -237,6 +266,7 @@
                 explaining technical concepts in a non-technical capacity.
               </p>
             </div>
+            <!-- ./skill-item -->
 
             <div data-aos="fade-down-left" class="skill-item">
               <h6>Teamwork</h6>
@@ -248,6 +278,7 @@
                 within the team.
               </p>
             </div>
+            <!-- ./skill-item -->
 
             <div data-aos="fade-down-right" class="skill-item">
               <h6>Open-mindedness</h6>
@@ -258,16 +289,17 @@
                 environments.
               </p>
             </div>
+            <!-- ./skill-item -->
           </div>
           <!-- ./row -->
         </div>
-        <!-- ./section-content -->
+        <!-- ./content-box -->
       </div>
       <!-- ./container -->
 
       <!-- Work History -->
       <div id="workHistory" class="container">
-        <div data-aos="fade-up" class="section-content">
+        <div data-aos="fade-up" class="content-box">
           <h4 class="text-center">
             Work History <i class="ml-3 animated wobble fas fa-hammer"></i>
           </h4>
@@ -276,7 +308,7 @@
 
       <!-- Work History Content -->
       <div class="container">
-        <div data-aos="fade-up" class="section-content">
+        <div data-aos="fade-up" class="content-box">
           <div data-aos="slide-left" class="history-item">
             <h6 class="history-title">
               Field Technician <span>- Terracon - July 2017 - Current</span>

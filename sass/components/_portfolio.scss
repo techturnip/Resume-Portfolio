@@ -24,6 +24,14 @@
       margin-top: 5%;
       margin-bottom: 5%;
 
+      .card-body {
+        .card-text {
+          font-size: 1rem;
+
+          @include resp-text(1rem, .9rem, 1rem);
+        }
+      }
+
       .card-img-top {
         width: 60%;
         margin: 0 auto;

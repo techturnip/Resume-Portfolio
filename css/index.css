@@ -264,6 +264,17 @@ p {
     #portfolio .portfolio-content .card {
       margin-top: 5%;
       margin-bottom: 5%; }
+      #portfolio .portfolio-content .card .card-body .card-text {
+        font-size: 1rem; }
+        @media only screen and (max-width: 1200px) {
+          #portfolio .portfolio-content .card .card-body .card-text {
+            font-size: 1rem; } }
+        @media only screen and (max-width: 992px) {
+          #portfolio .portfolio-content .card .card-body .card-text {
+            font-size: 0.9rem; } }
+        @media only screen and (max-width: 768px) {
+          #portfolio .portfolio-content .card .card-body .card-text {
+            font-size: 1rem; } }
       #portfolio .portfolio-content .card .card-img-top {
         width: 60%;
         margin: 0 auto; }

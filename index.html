@@ -488,12 +488,13 @@
       </div>
 
       <div class="container">
-        <form>
+        <form action="https://formspree.io/tyler@techturnip.us" method="POST">
           <div class="form-row">
             <div data-aos="fade-down-right" class="form-group col-md-6">
               <label for="inputName">Name</label>
               <input
                 type="text"
+                name="name"
                 class="form-control form-control-lg"
                 id="inputName"
                 placeholder="Your Name"
@@ -503,6 +504,7 @@
               <label for="inputEmail">Email</label>
               <input
                 type="email"
+                name="_replyto"
                 class="form-control form-control-lg"
                 id="inputEmail"
                 placeholder="Your Email"
@@ -513,6 +515,7 @@
             <label for="inputMessage">Message</label>
             <textarea
               type="text"
+              name="message"
               class="form-control form-control-lg"
               id="inputMessage"
               placeholder="Your Message"

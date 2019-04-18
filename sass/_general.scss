@@ -105,3 +105,14 @@ p {
     margin: 0;
   }
 }
+
+.badge {
+  &:not(:last-child) {
+    margin-right: .4rem;
+    padding: .3rem .6rem;
+  }
+}
+
+.badge-primary {
+  background-color: $fiery-rose;
+}

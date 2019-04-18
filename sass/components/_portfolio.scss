@@ -1,31 +1,44 @@
 #portfolio {
+  position: relative;
   background: $portfolio-bg;
   background-attachment: fixed;
   color: $portfolio-font-color;
-  padding-bottom: 4rem;
-
-  #portfolioLink {
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5%;
-  }
 
   .portfolio-header {
-    background: $fiery-rose;
-    padding: 3rem 0;
+    height: 400px;
+    margin-top: -74px;
+    padding-top: 155px;
+    background: $portfolio-header-bg;
+    background-size: cover;
+    background-position: center;
+    color: $portfolio-header-color;
+
+    @media #{$break-lg} {
+      height: 200px;
+      padding-top: 80px;
+      margin-top: 0;
+    }
   }
 
   .portfolio-content {
-    padding: 3% 0;
+    padding: 5%;
 
     .card {
       margin-top: 5%;
       margin-bottom: 5%;
 
       .card-body {
-        .card-text {
+
+        .tags {
+          border-top: solid 1px $gainsboro;
+          border-bottom: solid 1px $gainsboro;
+          padding: 1rem 0;
+          margin-bottom: 1.6rem;
+
+        }
+
+        .card-text,
+        .badge {
           font-size: 1rem;
 
           @include resp-text(1rem, .9rem, 1rem);

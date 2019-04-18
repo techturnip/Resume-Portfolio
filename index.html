@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico|Roboto" rel="stylesheet" />
+
   <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
   <link rel="stylesheet" href="css/index.css" />
 </head>
@@ -103,7 +104,7 @@
     <!-- Resume Header -->
     <div data-aos="fade-up" class="container">
       <div class="section-header">
-        <h3 data-aos="zoom-out" data-aos-delay="500" class="section-title">
+        <h3 class="section-title">
           Check out my Resume!
         </h3>
       </div>
@@ -114,13 +115,13 @@
     <!-- Resume Content -->
     <div id="aboutMe" data-aos="fade-up" class="container">
       <!-- About Me / Skills Box-->
-      <div class="content-box">
+      <div data-aos="slide-up" class="content-box">
         <!-- About Me Wrapper-->
         <div class="about">
           <!-- About Me Content-->
           <div class="about-content">
-            <h4 data-aos="fade-down" data-aos-delay="500">About Me</h4>
-            <p data-aos="zoom-in">
+            <h4>About Me</h4>
+            <p>
               I've been working with HTML/CSS for over a decade. I have
               experience working with HTML & CSS frameworks such as Bootstrap
               and Materialize CSS, content management systems such as
@@ -130,7 +131,7 @@
           </div>
           <!-- About Image -->
           <div class="about-media">
-            <img data-aos="zoom-in" data-aos-delay="500" src="/img/me.jpg" alt="" class="me rounded-circle" />
+            <img src="/img/me.jpg" alt="" class="me rounded-circle" />
           </div>
           <!-- ./about-media -->
         </div>
@@ -138,35 +139,20 @@
 
         <!-- Skills -->
         <div class="row">
-          <div data-aos="slide-up" class="col-md-6">
+          <div class="col">
             <!-- My Skills -->
             <h5>My Skills</h5>
             <p>
               <span class="badge badge-primary">HTML &amp; CSS</span>
+              <span class="badge badge-primary">JavaScript</span>
+              <span class="badge badge-primary">Responsive Design</span>
               <span class="badge badge-primary">WordPress</span>
               <span class="badge badge-primary">Bootstrap 4</span>
               <span class="badge badge-primary">Materialize CSS</span>
               <span class="badge badge-primary">Less &amp; Sass</span>
               <span class="badge badge-primary">React</span>
-              <span class="badge badge-primary">Angular 2+</span>
-            </p>
-          </div>
-          <!-- ./col -->
-          <div data-aos="slide-up" class="col-md-6">
-            <!-- Soft Skills-->
-            <h5>Soft Skills</h5>
-            <p>
-              <span class="badge badge-secondary">Empathy</span>
-              <span class="badge badge-secondary">Personability</span>
-              <span class="badge badge-secondary">Approachability</span>
-              <span class="badge badge-secondary">Communication</span>
-              <span class="badge badge-secondary">Adaptability</span>
-              <span class="badge badge-secondary">Positive Attitude</span>
-              <span class="badge badge-secondary">Teamwork</span>
-              <span class="badge badge-secondary">Time Management</span>
-              <span class="badge badge-secondary">Leadership</span>
-              <span class="badge badge-secondary">Accountability</span>
-              <span class="badge badge-secondary">Problem Solving</span>
+              <span class="badge badge-primary">Gulp</span>
+              <span class="badge badge-primary">Git</span>
             </p>
           </div>
           <!-- ./col -->
@@ -190,62 +176,6 @@
     </div>
     <!-- ./container ./content-box -->
 
-    <!-- Applicable Skills -->
-    <div data-aos="fade" class="container">
-      <div class="content-box">
-        <!-- Flex Container -->
-        <div class="d-flex flex-lg-row flex-wrap justify-content-evenly">
-          <div data-aos="fade-up-left" class="skill-item">
-            <h6>Empathy</h6>
-            <p>
-              <strong>Personable</strong>, <strong>empathetic</strong>,
-              <strong>approachable</strong> and always willing to help team
-              members and clients while promoting workplace comfortability
-              with a <strong>positive attitude</strong> and tight integration
-              within the workplace culture.
-            </p>
-          </div>
-          <!-- ./skill-item -->
-
-          <div data-aos="fade-up-right" class="skill-item">
-            <h6>Communication</h6>
-            <p>
-              Ability to <strong>communicate</strong> effectively with both
-              team members and clients. Technical documentation/reporting and
-              explaining technical concepts in a non-technical capacity.
-            </p>
-          </div>
-          <!-- ./skill-item -->
-
-          <div data-aos="fade-down-left" class="skill-item">
-            <h6>Teamwork</h6>
-            <p>
-              Work best in team environments and independently as needed.
-              Adept in a supporting role with the ability to take initiative
-              and lead as needed. Often asked to cover for supervisors or
-              managers and provide training to support growth and cohesion
-              within the team.
-            </p>
-          </div>
-          <!-- ./skill-item -->
-
-          <div data-aos="fade-down-right" class="skill-item">
-            <h6>Open-mindedness</h6>
-            <p>
-              <strong>Adaptability</strong> within dynamic work environments.
-              Willingness to shift roles as needed and learn new skills to
-              meet the challenges that often arise in dynamic work
-              environments.
-            </p>
-          </div>
-          <!-- ./skill-item -->
-        </div>
-        <!-- ./row -->
-      </div>
-      <!-- ./content-box -->
-    </div>
-    <!-- ./container -->
-
     <!-- Work History -->
     <div id="workHistory" class="container">
       <div data-aos="fade-up" class="content-box">
@@ -258,7 +188,7 @@
     <!-- Work History Content -->
     <div class="container">
       <div data-aos="fade-up" class="content-box">
-        <div data-aos="slide-left" class="history-item">
+        <div class="history-item">
           <h6 class="history-title">
             Field Technician <span>- Terracon - July 2017 - Current</span>
           </h6>
@@ -273,7 +203,7 @@
             environment.
           </p>
         </div>
-        <div data-aos="slide-right" class="history-item">
+        <div class="history-item">
           <h6 class="history-title">
             Produce Associate/Manager
             <span>- Kroger - October 2013 - July 2017</span>
@@ -292,19 +222,19 @@
   <!-- Portfolio Section -->
   <section id="portfolio">
     <!-- Portfolio Header -->
-    <div id="portfolioLink" class="container-fluid align-items-center justify-content-center portfolio-header">
-      <h3 data-aos="fade-down" class="text-center">Check Out My Portfolio</h3>
+    <div id="portfolioLink" class="container-fluid portfolio-header">
+      <h3 data-aos="fade-down" class="portfolio-heading text-center">Check Out My Portfolio</h3>
     </div>
     <!-- ./portfolio-header -->
 
     <!-- Portfolio Content -->
     <div class="portfolio-content">
       <!-- Container -->
-      <div class="container">
+      <div class="container-fluid">
         <!-- Row -->
         <div class="row">
           <!-- Column -->
-          <div data-aos="slide-right" class="col-md-6">
+          <div data-aos="slide-up" class="col-lg-4">
             <!-- Card -->
             <div class="card">
               <!-- Card Image -->
@@ -317,6 +247,12 @@
                   course by Brad Traversy featuring the Materialize CSS
                   framework with data automatically populated via the
                   JSONPlaceholder api.
+                </p>
+
+                <p class="card-text tags">
+                  <span class="badge badge-primary">Materialize CSS</span>
+                  <span class="badge badge-primary">React</span>
+                  <span class="badge badge-primary">Git</span>
                 </p>
                 <!-- Card Buttons -->
                 <a href="https://github.com/techturnip/contactmanager" target="_blank" class="btn btn-primary">
@@ -333,7 +269,7 @@
           <!-- ./col -->
 
           <!-- Column -->
-          <div data-aos="slide-left" class="col-md-6">
+          <div data-aos="slide-up" class="col-lg-4">
             <!-- Card -->
             <div class="card">
               <!-- Card Image -->
@@ -345,6 +281,12 @@
                   Lambda School Project that explores responsive web design by
                   leveraging media queries and flexbox to layout elements at
                   different breakpoints throughout the website.
+                </p>
+
+                <p class="card-text tags">
+                  <span class="badge badge-primary">HTML &amp; CSS</span>
+                  <span class="badge badge-primary">Responsive Design</span>
+                  <span class="badge badge-primary">Git</span>
                 </p>
                 <!-- Card Buttons -->
                 <a href="https://github.com/techturnip/responsive-web-design-I/tree/tyler-turnipseed" target="_blank"
@@ -362,7 +304,7 @@
           <!-- ./col -->
 
           <!-- Column -->
-          <div data-aos="slide-right" class="col-md-6">
+          <div data-aos="slide-up" class="col-lg-4">
             <!-- Card -->
             <div class="card">
               <!-- Card Image -->
@@ -375,6 +317,13 @@
                   Lambda School Project that tasked me with leveraging the
                   principles of CSS preprocessing by creating a Digital Resume
                   of my own design using LESS.
+                </p>
+
+                <p class="card-text tags">
+                  <span class="badge badge-primary">HTML &amp; CSS</span>
+                  <span class="badge badge-primary">Responsive Design</span>
+                  <span class="badge badge-primary">Less</span>
+                  <span class="badge badge-primary">Git</span>
                 </p>
                 <!-- Card Buttons -->
                 <a href="https://github.com/techturnip/Preprocessing-I/tree/tyler-turnipseed" target="_blank"
@@ -439,7 +388,7 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-      duration: 1200
+      duration: 800
     });
   </script>
 </body>

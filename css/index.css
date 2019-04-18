@@ -17,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Pacifico", cursive; }
+  font-family: "Roboto", sans-serif; }
 
 h1 {
   font-size: 6rem; }
@@ -134,6 +134,13 @@ p {
   .footer p {
     margin: 0; }
 
+.badge:not(:last-child) {
+  margin-right: .4rem;
+  padding: .3rem .6rem; }
+
+.badge-primary {
+  background-color: #ff5d73; }
+
 .navbar {
   background: #222222; }
   .navbar .navbar-collapse {
@@ -147,7 +154,7 @@ p {
   .navbar .navbar-brand {
     margin-right: 1rem;
     font-size: 2rem;
-    font-family: "Pacifico", cursive; }
+    font-family: "Roboto", sans-serif; }
   .navbar .nav-link.active {
     color: #ff5d73; }
   .navbar .social-icons .social-link {
@@ -171,6 +178,8 @@ p {
     height: 100%; }
     #home .container .d-flex {
       height: 100%; }
+  #home .header-title {
+    font-family: "Pacifico", sans-serif; }
   #home .header-title,
   #home .header-subtitle {
     text-shadow: 2px 5px 3px rgba(51, 51, 51, 0.5);
@@ -229,7 +238,7 @@ p {
     padding: 0 1rem; }
     #resume .skill-item h6 {
       padding: 1rem 0 0.5rem;
-      font-family: "Pacifico", cursive;
+      font-family: "Roboto", sans-serif;
       font-size: 2rem; }
     @media (max-width: 800px) {
       #resume .skill-item {
@@ -246,34 +255,47 @@ p {
         font-size: .9rem; }
 
 #portfolio {
+  position: relative;
   background: url("../img/bg2.png");
   background-attachment: fixed;
-  color: #222222;
-  padding-bottom: 4rem; }
-  #portfolio #portfolioLink {
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5%; }
+  color: #222222; }
   #portfolio .portfolio-header {
-    background: #ff5d73;
-    padding: 3rem 0; }
+    height: 400px;
+    margin-top: -74px;
+    padding-top: 155px;
+    background: url("../img/portfolio-header3.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #dbdada; }
+    @media only screen and (max-width: 1200px) {
+      #portfolio .portfolio-header {
+        height: 200px;
+        padding-top: 80px;
+        margin-top: 0; } }
   #portfolio .portfolio-content {
-    padding: 3% 0; }
+    padding: 5%; }
     #portfolio .portfolio-content .card {
       margin-top: 5%;
       margin-bottom: 5%; }
-      #portfolio .portfolio-content .card .card-body .card-text {
+      #portfolio .portfolio-content .card .card-body .tags {
+        border-top: solid 1px #dbdada;
+        border-bottom: solid 1px #dbdada;
+        padding: 1rem 0;
+        margin-bottom: 1.6rem; }
+      #portfolio .portfolio-content .card .card-body .card-text,
+      #portfolio .portfolio-content .card .card-body .badge {
         font-size: 1rem; }
         @media only screen and (max-width: 1200px) {
-          #portfolio .portfolio-content .card .card-body .card-text {
+          #portfolio .portfolio-content .card .card-body .card-text,
+          #portfolio .portfolio-content .card .card-body .badge {
             font-size: 1rem; } }
         @media only screen and (max-width: 992px) {
-          #portfolio .portfolio-content .card .card-body .card-text {
+          #portfolio .portfolio-content .card .card-body .card-text,
+          #portfolio .portfolio-content .card .card-body .badge {
             font-size: 0.9rem; } }
         @media only screen and (max-width: 768px) {
-          #portfolio .portfolio-content .card .card-body .card-text {
+          #portfolio .portfolio-content .card .card-body .card-text,
+          #portfolio .portfolio-content .card .card-body .badge {
             font-size: 1rem; } }
       #portfolio .portfolio-content .card .card-img-top {
         width: 60%;

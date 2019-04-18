@@ -1,8 +1,16 @@
 // Typography
-$font-stack: 'Open Sans',
+$font: 'Open Sans',
 sans-serif;
-$heading: 'Pacifico',
-cursive;
+$font2: 'Roboto',
+sans-serif;
+$font3: 'Pacifico',
+sans-serif;
+
+$font-stack: $font;
+$heading: $font2;
+// $heading: 'Lato',
+// sans-serif;
+$heading-title: $font3;
 
 $primary-font: $font-stack;
 $heading-font: $heading;
@@ -38,6 +46,8 @@ $nav-bg: $raisin-black;
 // Portfolio
 $portfolio-bg: url('../img/bg2.png');
 $portfolio-font-color: $raisin-black;
+$portfolio-header-bg: url('../img/portfolio-header3.jpg');
+$portfolio-header-color: $gainsboro;
 
 // Media Variables
 $break-sm: "only screen and (max-width: 768px)";

@@ -39,7 +39,8 @@ $nav-active-color: $fiery-rose;
 $nav-hamburger: $fiery-rose;
 
 // Background Colors
-$body-bg: url('../img/bg.png');
+$primary-bg: url('../img/bg4.png');
+$primary-bg2: url('../img/bg5.png');
 $header-bg: url('../img/bg3.png');
 $nav-bg: $raisin-black;
 
@@ -55,6 +56,10 @@ $break-md: "only screen and (max-width: 992px)";
 $break-lg: "only screen and (max-width: 1200px)";
 
 // Mixins
+@mixin box-shadow($size: 5px, $blur: 10px) {
+  box-shadow: 0 $size $blur rgba(51, 51, 51, 0.5);
+}
+
 @mixin resp-text($lg-font, $md-font, $sm-font) {
   @media #{$break-lg} {
     font-size: $lg-font;

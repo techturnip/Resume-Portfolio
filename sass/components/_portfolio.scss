@@ -1,6 +1,6 @@
 #portfolio {
   position: relative;
-  background: $portfolio-bg;
+  background: $primary-bg2;
   background-attachment: fixed;
   color: $portfolio-font-color;
 
@@ -12,6 +12,7 @@
     background-size: cover;
     background-position: center;
     color: $portfolio-header-color;
+    @include box-shadow(15px, 30px);
 
     @media #{$break-lg} {
       height: 200px;
@@ -28,13 +29,17 @@
       margin-bottom: 5%;
 
       .card-body {
+        .card-text {
+          strong {
+            margin-right: .5rem;
+          }
+        }
 
         .tags {
           border-top: solid 1px $gainsboro;
           border-bottom: solid 1px $gainsboro;
           padding: 1rem 0;
           margin-bottom: 1.6rem;
-
         }
 
         .card-text,

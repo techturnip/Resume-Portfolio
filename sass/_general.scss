@@ -1,6 +1,7 @@
 body {
   font-family: $primary-font;
   position: relative;
+  background: $primary-bg;
 }
 
 a {
@@ -87,7 +88,7 @@ p {
     margin-top: 5%;
     background: white;
     border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(51, 51, 51, 0.5);
+    @include box-shadow;
   }
 }
 
@@ -117,4 +118,9 @@ p {
 
 .badge-primary {
   background-color: $outer-space;
+}
+
+.card {
+  border: none;
+  @include box-shadow;
 }

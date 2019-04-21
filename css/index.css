@@ -254,12 +254,13 @@ p {
     animation-duration: 4s;
     animation-iteration-count: infinite; }
   #resume #workHistory .history-item {
-    font-size: 1rem; }
+    font-size: 1rem;
+    margin-bottom: 2rem; }
     #resume #workHistory .history-item .history-title {
       font-family: "Open Sans", sans-serif;
       font-size: 1.2rem; }
       #resume #workHistory .history-item .history-title span {
-        font-size: .9rem; }
+        font-size: 0.9rem; }
 
 #portfolio {
   position: relative;
@@ -285,27 +286,20 @@ p {
     #portfolio .portfolio-content .card {
       margin-top: 5%;
       margin-bottom: 5%; }
+      #portfolio .portfolio-content .card .card-img-top {
+        border: solid 1px #dbdada; }
       #portfolio .portfolio-content .card .card-body .card-text strong {
-        margin-right: .5rem; }
-      #portfolio .portfolio-content .card .card-body .tags {
-        border-top: solid 1px #dbdada;
-        border-bottom: solid 1px #dbdada;
-        padding: 1rem 0;
-        margin-bottom: 1.6rem; }
-      #portfolio .portfolio-content .card .card-body .card-text,
-      #portfolio .portfolio-content .card .card-body .badge {
+        margin-right: 0.5rem; }
+      #portfolio .portfolio-content .card .card-body .card-text {
         font-size: 1rem; }
         @media only screen and (max-width: 1200px) {
-          #portfolio .portfolio-content .card .card-body .card-text,
-          #portfolio .portfolio-content .card .card-body .badge {
+          #portfolio .portfolio-content .card .card-body .card-text {
             font-size: 1rem; } }
         @media only screen and (max-width: 992px) {
-          #portfolio .portfolio-content .card .card-body .card-text,
-          #portfolio .portfolio-content .card .card-body .badge {
+          #portfolio .portfolio-content .card .card-body .card-text {
             font-size: 0.9rem; } }
         @media only screen and (max-width: 768px) {
-          #portfolio .portfolio-content .card .card-body .card-text,
-          #portfolio .portfolio-content .card .card-body .badge {
+          #portfolio .portfolio-content .card .card-body .card-text {
             font-size: 1rem; } }
       #portfolio .portfolio-content .card .card-img-top {
         width: 60%;

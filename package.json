@@ -12,5 +12,13 @@
     "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techturnip/Resume-Portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/techturnip/Resume-Portfolio/issues"
+  },
+  "homepage": "https://github.com/techturnip/Resume-Portfolio#readme"
 }

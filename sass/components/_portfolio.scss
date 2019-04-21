@@ -28,25 +28,21 @@
       margin-top: 5%;
       margin-bottom: 5%;
 
+      .card-img-top {
+        border: solid 1px $gainsboro;
+      }
+
       .card-body {
         .card-text {
           strong {
-            margin-right: .5rem;
+            margin-right: 0.5rem;
           }
         }
 
-        .tags {
-          border-top: solid 1px $gainsboro;
-          border-bottom: solid 1px $gainsboro;
-          padding: 1rem 0;
-          margin-bottom: 1.6rem;
-        }
-
-        .card-text,
-        .badge {
+        .card-text {
           font-size: 1rem;
 
-          @include resp-text(1rem, .9rem, 1rem);
+          @include resp-text(1rem, 0.9rem, 1rem);
         }
       }
 

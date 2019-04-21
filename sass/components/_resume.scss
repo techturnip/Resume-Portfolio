@@ -65,13 +65,14 @@
 
     .history-item {
       font-size: 1rem;
+      margin-bottom: 2rem;
 
       .history-title {
         font-family: $primary-font;
         font-size: 1.2rem;
 
         span {
-          font-size: .9rem;
+          font-size: 0.9rem;
         }
       }
     }

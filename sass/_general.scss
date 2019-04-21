@@ -107,6 +107,8 @@ p {
 }
 
 .badge {
+  font-weight: 500;
+
   &:not(:last-child) {
     margin-right: .4rem;
     padding: .3rem .6rem;
@@ -114,5 +116,5 @@ p {
 }
 
 .badge-primary {
-  background-color: $fiery-rose;
+  background-color: $outer-space;
 }

@@ -134,12 +134,14 @@ p {
   .footer p {
     margin: 0; }
 
-.badge:not(:last-child) {
-  margin-right: .4rem;
-  padding: .3rem .6rem; }
+.badge {
+  font-weight: 500; }
+  .badge:not(:last-child) {
+    margin-right: .4rem;
+    padding: .3rem .6rem; }
 
 .badge-primary {
-  background-color: #ff5d73; }
+  background-color: #494949; }
 
 .navbar {
   background: #222222; }

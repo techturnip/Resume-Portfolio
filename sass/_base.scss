@@ -1,10 +1,7 @@
 // Typography
-$font: 'Open Sans',
-sans-serif;
-$font2: 'Roboto',
-sans-serif;
-$font3: 'Pacifico',
-sans-serif;
+$font: 'Open Sans', sans-serif;
+$font2: 'Roboto', sans-serif;
+$font3: 'Pacifico', sans-serif;
 
 $font-stack: $font;
 $heading: $font2;
@@ -51,9 +48,9 @@ $portfolio-header-bg: url('../img/portfolio-header3.jpg');
 $portfolio-header-color: $gainsboro;
 
 // Media Variables
-$break-sm: "only screen and (max-width: 768px)";
-$break-md: "only screen and (max-width: 992px)";
-$break-lg: "only screen and (max-width: 1200px)";
+$break-sm: 'only screen and (max-width: 768px)';
+$break-md: 'only screen and (max-width: 992px)';
+$break-lg: 'only screen and (max-width: 1200px)';
 
 // Mixins
 @mixin box-shadow($size: 5px, $blur: 10px) {

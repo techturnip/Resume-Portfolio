@@ -20,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/techturnip/Resume-Portfolio/issues"
   },
-  "homepage": "https://github.com/techturnip/Resume-Portfolio#readme"
+  "homepage": "https://github.com/techturnip/Resume-Portfolio#readme",
+  "dependencies": {}
 }

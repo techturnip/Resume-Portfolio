@@ -253,13 +253,16 @@ p {
   #resume #workHistory .animated {
     animation-duration: 4s;
     animation-iteration-count: infinite; }
-  #resume #workHistory .history-item {
-    font-size: 1rem;
-    margin-bottom: 2rem; }
-    #resume #workHistory .history-item .history-title {
+  #resume .history-item {
+    font-size: 1rem; }
+    #resume .history-item:not(:first-child) {
+      margin-top: 1rem;
+      border-top: solid 1px #dbdada;
+      padding-top: 1rem; }
+    #resume .history-item .history-title {
       font-family: "Open Sans", sans-serif;
       font-size: 1.2rem; }
-      #resume #workHistory .history-item .history-title span {
+      #resume .history-item .history-title span {
         font-size: 0.9rem; }
 
 #portfolio {

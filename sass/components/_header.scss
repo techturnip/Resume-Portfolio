@@ -1,9 +1,8 @@
 // header styles
 #home {
-  background: $header-bg;
-  background-attachment: fixed;
   width: 100%;
   height: 90vh;
+  @include background($header-bg);
 
   .container {
     height: 100%;
@@ -15,6 +14,9 @@
 
   .header-title {
     font-family: $heading-title;
+    @media #{$break-sm} {
+      text-align: center;
+    }
   }
 
   .header-title,

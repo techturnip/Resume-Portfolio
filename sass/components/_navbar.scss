@@ -19,8 +19,9 @@
     margin-right: 1rem;
     font-size: 2rem;
     font-family: $heading;
-  }
 
+    @include resp-text(2rem, 1.75rem, 1.25rem);
+  }
 
   .nav-link.active {
     color: $nav-active-color;
@@ -28,6 +29,7 @@
 
   .social-icons {
     .social-link {
+      font-size: 2rem;
       color: $nav-link-color;
       text-decoration: none;
 
@@ -38,6 +40,8 @@
       &:hover {
         color: $nav-hover-color;
       }
+
+      @include resp-text(2rem, 1.75rem, 1.25rem);
     }
   }
 
@@ -46,6 +50,7 @@
 
     .fa {
       color: $nav-hamburger;
+      @include resp-text(2rem, 1.75rem, 1.25rem);
     }
   }
 }

@@ -1,5 +1,6 @@
 #contact {
-  padding: 4rem 0;
+  @include background($contact-bg, $attach: scroll);
+  padding: 5% 0;
   border-top: solid 2px $gainsboro;
 
   h3 {

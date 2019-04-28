@@ -1,7 +1,6 @@
 #resume {
-  background: $primary-bg;
-  background-attachment: fixed;
   padding-bottom: 10%;
+  @include background($resume-bg, 300px);
 
   .about {
     display: flex;

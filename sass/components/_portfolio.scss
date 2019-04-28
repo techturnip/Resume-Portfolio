@@ -1,7 +1,6 @@
 #portfolio {
   position: relative;
-  background: $primary-bg2;
-  background-attachment: fixed;
+  @include background($portfolio-bg);
   color: $portfolio-font-color;
 
   .portfolio-header {

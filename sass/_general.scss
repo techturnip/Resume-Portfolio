@@ -1,7 +1,14 @@
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
 body {
   font-family: $primary-font;
-  position: relative;
-  background: $primary-bg;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: $white;
 }
 
 a {
@@ -62,6 +69,12 @@ p {
   @include resp-text(1.2rem, 1.1rem, 1rem);
 }
 
+.hide-sm {
+  @media #{$break-sm} {
+    display: none;
+  }
+}
+
 .section {
   padding: 3% 0;
 
@@ -100,7 +113,6 @@ p {
 .footer {
   background-color: $raisin-black;
   padding: 2rem 0;
-  margin-top: 5rem;
 
   p {
     margin: 0;
@@ -111,8 +123,8 @@ p {
   font-weight: 500;
 
   &:not(:last-child) {
-    margin-right: .4rem;
-    padding: .3rem .6rem;
+    margin-right: 0.4rem;
+    padding: 0.3rem 0.6rem;
   }
 }
 

@@ -9,7 +9,7 @@
   "author": "Tyler Turnipseed",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.5",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.2"
   },
